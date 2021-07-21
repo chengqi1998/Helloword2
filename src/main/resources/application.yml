@@ -1,0 +1,37 @@
+#全局配置文件的另外一种写法，格式为key：空格 value,用来修改默认配置文件
+server:
+  port: 8082
+#语法：
+#存储普通的值：key: value
+#  age: 98
+#存储对象：
+#student:
+#  name: yanchengqi
+#  age: 98
+
+#对象的行内写法
+#student: {name: yanchengqi,age: 98}
+
+#数组的写法
+#pets:
+#  - cat
+#  - dog
+#  - pig
+#等同于
+#pets: [cat,dog,pig]
+
+#使用application.yml文件为Person类赋值
+person:
+  name: yanchengqi
+  age: 98
+  happy: false
+  birth: 2021/7/21
+  maps: {k1: v1,k2: v2}
+  lists:
+    - code
+    - music
+    - grial
+  dog:
+    name: 旺财
+    age: 3
+
