@@ -3,6 +3,7 @@ package com.yanchengqi.helloword2.pojo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.Date;
 import java.util.List;
@@ -13,7 +14,13 @@ import java.util.Map;
 
 //从yml配置文件中person和Person绑定起来
 @ConfigurationProperties(prefix = "person")
+@Validated //数据校验
 public class Person {
+
+//    @Email(message="格式错误")
+//    检验是否为所需要的格式
+
+
     private String name;
     private Integer age;
     private Boolean happy;
