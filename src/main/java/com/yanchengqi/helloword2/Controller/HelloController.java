@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 //    接口：http://localhost:8080/hello.
-    @RequestMapping("/hello")
+    @RequestMapping("/hello123")
     public String hello() {
 //        调用业务，接受前端参数
-        return "hello!";
+        return "hello!123";
     }
 }
