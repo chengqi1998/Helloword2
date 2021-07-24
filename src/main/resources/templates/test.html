@@ -6,5 +6,10 @@
 </head>
 <body>
 <div th:text="${msg}"></div>
+<div th:utext="${msg}"></div>
+<hr>
+<h3 th:each="use:${users}" th:text="${use}"></h3>
+<h1 th:each="numb:${number}" th:text="${numb}"></h1>
+<h3 th:each="abc:${number}">[[${abc}]]</h3>
 </body>
 </html>
